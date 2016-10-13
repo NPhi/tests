@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'ETmodules';
+	src:url('fonts/ETmodules_v2.eot');
+	src:url('fonts/ETmodules_v2.eot?#iefix') format('embedded-opentype'),
+		url('fonts/ETmodules_v2.ttf') format('truetype'),
+		url('fonts/ETmodules_v2.woff') format('woff'),
+		url('fonts/ETmodules_v2.svg#ETmodules') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
