@@ -1,0 +1,14 @@
+$offset-blurb : 30px;
+
+.blurb {
+	position: relative;
+	padding-left: $offset-blurb;
+	&--icon {
+		position: absolute;
+		margin-left: -$offset-blurb;
+	}
+	&--content {
+		border : 1px solid yellow;
+		word-wrap: break-word;
+	}
+}
