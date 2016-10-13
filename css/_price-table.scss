@@ -1,0 +1,43 @@
+$pricing-line-color : #bebebe;
+
+.price-table {
+	text-align : center;
+	border : 1px solid $pricing-line-color;
+
+	-webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+	&--heading {
+		padding: 5px 0;
+		background-color: $pricing-line-color;
+		h2 {
+			color : #fff;
+		}
+	}
+
+	&--content-top {
+		border-bottom: 1px solid $pricing-line-color;
+		padding: 30px 0;
+	}
+
+	&--content {
+
+	}
+}
+
+.price-container {
+	position: relative;
+
+	& > .dollar-sign {
+		position: absolute;
+		margin-left: -0.5em;
+		font-size: 18px;
+		font-weight: 400;
+	}
+
+	& > .number {
+		font-size: 80px;
+	    font-weight: 300;
+	    line-height: 1.03em;
+	}
+}
