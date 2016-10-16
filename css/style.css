@@ -26,3 +26,15 @@
 	    background-color: #000;
    }
 }
+
+.half-rule {
+    width: 100px;
+    margin: 40px 100%;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eeeeee;
+}
