@@ -2,11 +2,13 @@
 	border: 1px solid #000;
 	@include clearfix;
 }
-
+//need to improve to be more efficient
 @mixin get-column($index,$class) {
 	.row-col-#{$class}-#{$index} {
       width: percentage(($index / $grid-num));
       float: left;
+      padding-right: 15px;
+      padding-left: 15px;
       border: 1px solid red;
     }
 }
