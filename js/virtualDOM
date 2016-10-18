@@ -1,0 +1,19 @@
+export function createVirtualDOM(type, props, children) {
+	if(!Array.isArray(children)){
+		children = [children];
+	}
+	return { type, props, children };
+}
+
+export function createElement(node){
+	if(typeof node === 'string'){
+		return document.createTextNode(node);
+	}
+
+	const parentElement = document.createElement(node.type);
+
+	node.children
+		.map(createElement)
+		.forEach(parentElement.appendChild.bind(parentElement));
+	return parentElement;
+}
