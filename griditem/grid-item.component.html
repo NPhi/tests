@@ -1,0 +1,11 @@
+<div 
+	class="item react-grid-item"
+	[class.react-draggable-dragging]="dragging"
+	[ngStyle]="setStyles()"
+	dragEnabled
+	(onDragStart)="handleOnDragStart($event)"
+	(onDrag)="handleOnDrag($event)"
+	(onDragStop)="handleOnDragStop($event)"
+	>
+	{{i}}. Grid Item {{cols}} {{containerWidth}}
+</div>
